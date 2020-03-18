@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <h1> This is our Articles App</h1>
+    </header>
+    <main>
+      <h2>These are our Magazines</h2>
+      <ul id='magazine-ul'></ul>
+    <aside>
+      <h2>Our Articles Form</h2>
+      <form action='http://localhost:3004/articles' method='POST'>
+        <input type='text' placeholder='title' name='title'/>
+        <select id='author'></select>
+        <select id='magazine'></select>
+      </form>
+    <aside>
+    </main>
+  </body>
+  <script src='index.js'></script>
+</html>
+
+<!-- title: params([:title]),
+author_id: params([:author_id]),
+magazine_id: params([:magazine_id]) -->
