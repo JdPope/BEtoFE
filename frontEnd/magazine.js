@@ -1,9 +1,12 @@
 const searchParam = new URLSearchParams(window.location.search)
 const id = searchParam.get('id')
+
+
 const header = document.querySelector('#mag-header')
 const artUl = document.querySelector('#article-ul')
 
-fetch(`http://localhost:3004/magazines${id}`)
+// Note: the show route for magazines is not set up, but if it was, this is how you would access it.
+fetch(`http://localhost:3004/magazines/${id}`)
   .then(response => response.json())
   .then(result => renderMagazineInfo(result))
 
